@@ -44,4 +44,24 @@ export default {
     color: #444;
     margin-top: 60px;
   }
+
+  button {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1.4em;
+    font-weight: bold;
+    background: #0faf87;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  button[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
 </style>
