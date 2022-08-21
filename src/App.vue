@@ -1,5 +1,6 @@
 <template>
-  <h1>Ninja Reaction Timer</h1>
+  <h1>Reaction Timer</h1>
+  <h3>Perform the action immediately you see it 😎</h3>
   <button @click="start" :disabled="isPlaying">Play</button>
   <Block v-if="isPlaying" :delay="delay" @reaction="endGame" ></Block>
   <Results v-if="showResults" :score="score"></Results>
@@ -43,6 +44,10 @@ export default {
     text-align: center;
     color: #444;
     margin-top: 60px;
+  }
+  
+  h3 {
+  text-align: center;
   }
 
   button {
